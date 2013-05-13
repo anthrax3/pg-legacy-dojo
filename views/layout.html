@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title|escape }} | mwiki-php</title>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul class="breadcrumb">
+      <li><a href="/">Mwiki-php</a> <span class="divider">/</span></li>
+      <li class="active">{{ title|escape }}</li>
+    </ul>
+
+    <div class="container">
+      {% block body %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

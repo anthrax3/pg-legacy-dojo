@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+BASE=$(dirname "$0")
+WEBROOT="$BASE/.."
+
+php -S localhost:8000 -t "$WEBROOT"

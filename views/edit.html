@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h1>Edit {{ title|escape }}</h1>
+
+<form action="{{ path('update', {title: title}) }}" method="post" class="form-stacked">
+  <input type="hidden" id="_method" name="_method" value="PUT" />
+  <div class="edit_area">
+    <textarea class="xxlarge" name="body">{{ body|escape }}</textarea>
+  </div>
+
+  <div class="actions">
+    <input class="btn primary large" type="submit" value="Save" />
+    <a class="a btn large" href="{{ path('show', {title: title}) }}">
+      I changed my mind
+    </a>
+  </div>
+</form>
+{% endblock %}
