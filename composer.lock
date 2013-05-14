@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "5276a86fc5922b83cdc318c7974a8e5b",
+    "hash": "ba8dff9ab07f63e3e9ef46d8d6a65339",
     "packages": [
         {
             "name": "dflydev/doctrine-orm-service-provider",
@@ -273,58 +273,6 @@
             "time": "2013-05-11 07:51:12"
         },
         {
-            "name": "phing/phing",
-            "version": "2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phingofficial/phing.git",
-                "reference": "2.5.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/2.5.0",
-                "reference": "2.5.0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.0"
-            },
-            "bin": [
-                "bin/phing"
-            ],
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "classes/phing/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "include-path": [
-                "classes"
-            ],
-            "license": [
-                "LGPL3"
-            ],
-            "authors": [
-                {
-                    "name": "Michiel Rook",
-                    "email": "mrook@php.net"
-                },
-                {
-                    "name": "Phing Community",
-                    "homepage": "http://www.phing.info/trac/wiki/Development/Contributors"
-                }
-            ],
-            "description": "PHing Is Not GNU make; it's a PHP project build system or build tool based on Apache Ant.",
-            "homepage": "http://www.phing.info/",
-            "keywords": [
-                "build",
-                "task",
-                "tool"
-            ],
-            "time": "2013-02-16 14:23:57"
-        },
-        {
             "name": "phpunit/php-code-coverage",
             "version": "1.2.9",
             "source": {
@@ -557,16 +505,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "3.7.19",
+            "version": "3.7.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3.7.19"
+                "reference": "3.7.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.19",
-                "reference": "3.7.19",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.20",
+                "reference": "3.7.20",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +528,7 @@
                 "phpunit/php-text-template": ">=1.1.1",
                 "phpunit/php-timer": ">=1.0.2,<1.1.0",
                 "phpunit/phpunit-mock-objects": ">=1.2.0,<1.3.0",
-                "symfony/yaml": ">=2.0.0,<2.3.0"
+                "symfony/yaml": ">=2.0,<3.0"
             },
             "require-dev": {
                 "pear-pear/pear": "1.9.4"
@@ -627,7 +575,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-03-25 11:45:06"
+            "time": "2013-05-13 06:06:41"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

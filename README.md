@@ -6,7 +6,7 @@ Or: How I Learned to Stop Worrying and Love the Blog
 
 I *highly* encourage using PHP 5.4+ and typing:
 
-        $ php -S localhost:8000
+        $ scripts/serve
         PHP 5.4.12 Development Server started at Mon May 13 17:13:44 2013
         Listening on http://localhost:8000
         Document root is /home/you/dojo/mwiki-php
@@ -20,20 +20,22 @@ God help you, if you're using something like
 
 That's a very good question!
 
-        $ vendor/bin/phing
-        Buildfile: /home/you/dojo/mwiki-php/build.xml
+	$ scripts/test
+	PHPUnit 3.7.19 by Sebastian Bergmann.
 
-        mwiki-php > phpunit:
+	F
 
-          [phpunit] Testsuite: UglyTest
-          [phpunit] Tests run: 1, Failures: 1, Errors: 0, Incomplete: 0, Skipped: 0, Time elapsed: 0.00294 s
-          [phpunit] testDoomed FAILED
-          [phpunit] Now
-        Execution of target "phpunit" failed for the following reason: /home/you/dojo/mwiki-php/build.xml:5:35: Test FAILURE (testDoomed in class UglyTest): Now
+	Time: 0 seconds, Memory: 2.75Mb
 
-        BUILD FAILED
-        /home/you/dojo/mwiki-php/build.xml:5:35: Test FAILURE (testDoomed in class UglyTest): Now
-        Total time: 0.0892 seconds
+	There was 1 failure:
+
+	1) UglyTest::testDoomed
+	Now
+
+	/home/you/dojo/mwiki-php/tests/UglyTest.php:5
+
+	FAILURES!
+	Tests: 1, Assertions: 0, Failures: 1.
 
 Well... I think we can agree... that's a start!
 
@@ -44,7 +46,7 @@ Well... I think we can agree... that's a start!
 > Just a bunch of gibberish  
 > And PHP programmers act like they forgot about `composer`
 
-        $ composer install
+        $ scripts/prepare
         Loading composer repositories with package information
         Installing dependencies from lock file
         ...
