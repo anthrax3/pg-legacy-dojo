@@ -5,4 +5,10 @@ set -e
 BASE=$(dirname "$0")
 WEBROOT="$BASE/.."
 
-vendor/bin/phpunit --colors --bootstrap "$WEBROOT/vendor/autoload.php" "$WEBROOT/tests"
+CMD="vendor/bin/phpunit --colors --bootstrap $WEBROOT/vendor/autoload.php"
+
+if [ -z "$*" ]; then
+	$CMD "$WEBROOT/tests"
+else
+	$CMD "$@"
+fi
