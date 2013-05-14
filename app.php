@@ -35,6 +35,8 @@ $app->register(new Dflydev\Silex\Provider\DoctrineOrm\DoctrineOrmServiceProvider
 
 $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
+$app->register(new MWiki\QueryProvider());
+
 $app->get('/', function() use($app) {
     return $app->redirect('/Welcome');
 });
@@ -75,16 +77,7 @@ $app->put('/{title}', function(Request $request) use ($app) {
     return $app->redirect($app['url_generator']->generate('show', array('title' => $title)));
 })->bind('update');
 
-$app->get('/{title}/edit', function($title) use ($app) {
-    $em = $app['orm.em'];
-    $page = $em->getRepository('MWiki\Entity\Page')->findOneBy(array('title' => $title));
-    $body = $page ? $page->getBody() : '# Click EDIT to write something!';
-
-    return $app['twig']->render('edit.html', array(
-        'title' => $title,
-        'body' => $body,
-    ));
-})->bind('edit');
+$app->get('/{title}/edit', 'MWiki\PageController::edit')->bind('edit');
 
 Request::enableHttpMethodParameterOverride();
 return $app;
