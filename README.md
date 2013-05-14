@@ -9,7 +9,7 @@ I *highly* encourage using PHP 5.4+ and typing:
 	$ scripts/serve
 	PHP 5.4.12 Development Server started at Mon May 13 17:13:44 2013
 	Listening on http://localhost:8000
-	Document root is /home/you/dojo/mwiki-php
+	Document root is /home/you/dojo/pg-legacy-dojo
 	Press Ctrl-C to quit.
 
 God help you, if you're using something like [Z-WAMP](http://zwamp.sourceforge.net/) or [XAMPP](http://www.apachefriends.org).
@@ -19,21 +19,13 @@ God help you, if you're using something like [Z-WAMP](http://zwamp.sourceforge.n
 That's a very good question!
 
 	$ scripts/test
-	PHPUnit 3.7.19 by Sebastian Bergmann.
+	PHPUnit 3.7.20 by Sebastian Bergmann.
 
-	F
+	.....
 
-	Time: 0 seconds, Memory: 2.75Mb
+	Time: 0 seconds, Memory: 13.25Mb
 
-	There was 1 failure:
-
-	1) UglyTest::testDoomed
-	Now
-
-	/home/you/dojo/mwiki-php/tests/UglyTest.php:5
-
-	FAILURES!
-	Tests: 1, Assertions: 0, Failures: 1.
+	OK (5 tests, 10 assertions)
 
 Well... I think we can agree... that's a start!
 
