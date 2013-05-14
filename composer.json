@@ -1,10 +1,11 @@
 {
     "require": {
-        "symfony/browser-kit": "*@stable",
         "dflydev/doctrine-orm-service-provider": "*@stable",
         "phpunit/phpunit": "*@stable",
         "silex/silex": "*@stable",
+        "symfony/browser-kit": "*@stable",
         "symfony/twig-bridge": "*@stable",
+        "nicl/silex-markdown": "*@stable",
         "twig/twig": "*@stable"
     },
     "autoload": {

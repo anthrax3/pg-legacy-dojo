@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8cfe4ad3f8fd82508ebca01affe3834b",
+    "hash": "b2260e43a34fa09a4d840b1821f5ae02",
     "packages": [
         {
             "name": "dflydev/doctrine-orm-service-provider",
@@ -69,6 +69,60 @@
                 "silex"
             ],
             "time": "2012-12-30 23:41:22"
+        },
+        {
+            "name": "dflydev/markdown",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dflydev/dflydev-markdown.git",
+                "reference": "v1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/dflydev/dflydev-markdown/zipball/v1.0.2",
+                "reference": "v1.0.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "dflydev\\markdown": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "New BSD License"
+            ],
+            "authors": [
+                {
+                    "name": "Dragonfly Development Inc.",
+                    "email": "info@dflydev.com",
+                    "homepage": "http://dflydev.com"
+                },
+                {
+                    "name": "Beau Simensen",
+                    "email": "beau@dflydev.com",
+                    "homepage": "http://beausimensen.com"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "homepage": "http://michelf.com"
+                },
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net"
+                }
+            ],
+            "description": "PHP Markdown & Extra",
+            "homepage": "http://github.com/dflydev/dflydev-markdown",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2012-01-15 19:36:37"
         },
         {
             "name": "doctrine/common",
@@ -271,6 +325,50 @@
                 "orm"
             ],
             "time": "2013-05-11 07:51:12"
+        },
+        {
+            "name": "nicl/silex-markdown",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicl/Silex-Markdown",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/nicl/Silex-Markdown/archive/1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": ""
+            },
+            "require": {
+                "dflydev/markdown": "1.0.*",
+                "silex/silex": "1.0.*",
+                "twig/twig": ">=1.8,<2.0-dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": [
+
+                ]
+            },
+            "autoload": {
+                "psr-0": {
+                    "Nicl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Nicolas Long",
+                    "email": "nicolaslong@gmail.com"
+                }
+            ],
+            "description": "Simple Silex wrapper for the Dragonfly markdown library",
+            "homepage": "http://github.com/nicl/silex-markdown",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2012-10-16 07:36:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1349,11 +1447,12 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/browser-kit": 0,
         "dflydev/doctrine-orm-service-provider": 0,
         "phpunit/phpunit": 0,
         "silex/silex": 0,
+        "symfony/browser-kit": 0,
         "symfony/twig-bridge": 0,
+        "nicl/silex-markdown": 0,
         "twig/twig": 0
     },
     "platform": [

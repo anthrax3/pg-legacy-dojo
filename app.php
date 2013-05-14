@@ -37,6 +37,8 @@ $app->register(new Silex\Provider\UrlGeneratorServiceProvider());
 
 $app->register(new MWiki\QueryProvider());
 
+$app->register(new Nicl\Silex\MarkdownServiceProvider());
+
 $app->get('/', function() use($app) {
     return $app->redirect('/Welcome');
 });

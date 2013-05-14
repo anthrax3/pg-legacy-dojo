@@ -2,7 +2,7 @@
 
 {% block body %}
   <div class="body">
-    {{ body|escape }}
+    {{ body|markdown }}
   </div>
   <a class="btn primary large" href="{{ path('edit', {title: title}) }}">Edit</a>
 {% endblock %}
