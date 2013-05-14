@@ -87,3 +87,4 @@ $app->get('/{title}/edit', function($title) use ($app) {
 })->bind('edit');
 
 Request::enableHttpMethodParameterOverride();
+return $app;
